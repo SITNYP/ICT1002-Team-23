@@ -1,0 +1,709 @@
+year,level_1,level_2,value
+1960,Gross Fixed Capital Formation,Construction & Works,109.4
+1960,Gross Fixed Capital Formation,Transport Equipment,28.6
+1960,Gross Fixed Capital Formation,Machinery & Equipment,66.9
+1960,Gross Fixed Capital Formation,Intellectual Property Products,na
+1960,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),50.9
+1960,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),2.6
+1960,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),6.3
+1960,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1960,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),58.5
+1960,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),26
+1960,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),60.6
+1960,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1961,Gross Fixed Capital Formation,Construction & Works,164.1
+1961,Gross Fixed Capital Formation,Transport Equipment,37.2
+1961,Gross Fixed Capital Formation,Machinery & Equipment,96
+1961,Gross Fixed Capital Formation,Intellectual Property Products,na
+1961,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),75.2
+1961,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),3.9
+1961,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),9.2
+1961,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1961,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),88.9
+1961,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),33.3
+1961,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),86.8
+1961,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1962,Gross Fixed Capital Formation,Construction & Works,195.7
+1962,Gross Fixed Capital Formation,Transport Equipment,46.8
+1962,Gross Fixed Capital Formation,Machinery & Equipment,117
+1962,Gross Fixed Capital Formation,Intellectual Property Products,na
+1962,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),94.7
+1962,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),3.9
+1962,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),12.5
+1962,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1962,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),101
+1962,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),42.9
+1962,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),104.5
+1962,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1963,Gross Fixed Capital Formation,Construction & Works,249.3
+1963,Gross Fixed Capital Formation,Transport Equipment,44.3
+1963,Gross Fixed Capital Formation,Machinery & Equipment,152.5
+1963,Gross Fixed Capital Formation,Intellectual Property Products,na
+1963,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),121.9
+1963,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),1.4
+1963,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),28.1
+1963,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1963,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),127.4
+1963,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),42.9
+1963,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),124.4
+1963,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1964,Gross Fixed Capital Formation,Construction & Works,299.5
+1964,Gross Fixed Capital Formation,Transport Equipment,49.3
+1964,Gross Fixed Capital Formation,Machinery & Equipment,198.3
+1964,Gross Fixed Capital Formation,Intellectual Property Products,na
+1964,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),145.8
+1964,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),1.7
+1964,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),38.2
+1964,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1964,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),153.7
+1964,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),47.6
+1964,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),160.1
+1964,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1965,Gross Fixed Capital Formation,Construction & Works,360.1
+1965,Gross Fixed Capital Formation,Transport Equipment,59.7
+1965,Gross Fixed Capital Formation,Machinery & Equipment,205.2
+1965,Gross Fixed Capital Formation,Intellectual Property Products,na
+1965,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),164.6
+1965,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),3.8
+1965,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),23.7
+1965,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1965,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),195.5
+1965,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),55.9
+1965,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),181.5
+1965,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1966,Gross Fixed Capital Formation,Construction & Works,354.7
+1966,Gross Fixed Capital Formation,Transport Equipment,57
+1966,Gross Fixed Capital Formation,Machinery & Equipment,243.6
+1966,Gross Fixed Capital Formation,Intellectual Property Products,na
+1966,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),168.2
+1966,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),3.8
+1966,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),48.3
+1966,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1966,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),186.5
+1966,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),53.2
+1966,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),195.3
+1966,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1967,Gross Fixed Capital Formation,Construction & Works,412
+1967,Gross Fixed Capital Formation,Transport Equipment,61
+1967,Gross Fixed Capital Formation,Machinery & Equipment,265
+1967,Gross Fixed Capital Formation,Intellectual Property Products,na
+1967,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),179
+1967,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),4
+1967,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),23.1
+1967,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1967,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),233
+1967,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),57
+1967,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),241.9
+1967,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1968,Gross Fixed Capital Formation,Construction & Works,492.5
+1968,Gross Fixed Capital Formation,Transport Equipment,148.7
+1968,Gross Fixed Capital Formation,Machinery & Equipment,355.6
+1968,Gross Fixed Capital Formation,Intellectual Property Products,na
+1968,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),224.3
+1968,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),5.7
+1968,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),44.7
+1968,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1968,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),268.2
+1968,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),143
+1968,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),310.9
+1968,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1969,Gross Fixed Capital Formation,Construction & Works,568.4
+1969,Gross Fixed Capital Formation,Transport Equipment,190.7
+1969,Gross Fixed Capital Formation,Machinery & Equipment,566.6
+1969,Gross Fixed Capital Formation,Intellectual Property Products,na
+1969,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),220.1
+1969,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),6.1
+1969,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),62.3
+1969,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1969,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),348.3
+1969,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),184.6
+1969,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),504.3
+1969,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1970,Gross Fixed Capital Formation,Construction & Works,777.9
+1970,Gross Fixed Capital Formation,Transport Equipment,208.4
+1970,Gross Fixed Capital Formation,Machinery & Equipment,902.2
+1970,Gross Fixed Capital Formation,Intellectual Property Products,na
+1970,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),289.7
+1970,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),7
+1970,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),70.6
+1970,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1970,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),488.2
+1970,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),201.4
+1970,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),831.6
+1970,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1971,Gross Fixed Capital Formation,Construction & Works,1014
+1971,Gross Fixed Capital Formation,Transport Equipment,426.3
+1971,Gross Fixed Capital Formation,Machinery & Equipment,1067.1
+1971,Gross Fixed Capital Formation,Intellectual Property Products,na
+1971,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),332
+1971,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),5.6
+1971,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),82.8
+1971,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1971,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),682
+1971,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),420.7
+1971,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),984.3
+1971,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1972,Gross Fixed Capital Formation,Construction & Works,1380.7
+1972,Gross Fixed Capital Formation,Transport Equipment,444.2
+1972,Gross Fixed Capital Formation,Machinery & Equipment,1267.7
+1972,Gross Fixed Capital Formation,Intellectual Property Products,na
+1972,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),548.9
+1972,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),10.2
+1972,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),153.4
+1972,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1972,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),831.8
+1972,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),434
+1972,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1114.3
+1972,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1973,Gross Fixed Capital Formation,Construction & Works,1478.3
+1973,Gross Fixed Capital Formation,Transport Equipment,684.3
+1973,Gross Fixed Capital Formation,Machinery & Equipment,1443.7
+1973,Gross Fixed Capital Formation,Intellectual Property Products,na
+1973,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),574
+1973,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),12.5
+1973,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),134.1
+1973,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1973,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),904.3
+1973,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),671.8
+1973,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1309.6
+1973,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1974,Gross Fixed Capital Formation,Construction & Works,1951.3
+1974,Gross Fixed Capital Formation,Transport Equipment,894.4
+1974,Gross Fixed Capital Formation,Machinery & Equipment,1966.9
+1974,Gross Fixed Capital Formation,Intellectual Property Products,na
+1974,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),862.6
+1974,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),13.8
+1974,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),210.5
+1974,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),na
+1974,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),1088.7
+1974,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),880.6
+1974,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1756.4
+1974,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),na
+1975,Gross Fixed Capital Formation,Construction & Works,2120.6
+1975,Gross Fixed Capital Formation,Transport Equipment,680.7
+1975,Gross Fixed Capital Formation,Machinery & Equipment,1978.5
+1975,Gross Fixed Capital Formation,Intellectual Property Products,10.3
+1975,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),1089.6
+1975,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),16.1
+1975,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),230.7
+1975,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1.8
+1975,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),1031
+1975,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),664.6
+1975,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1747.8
+1975,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),8.5
+1976,Gross Fixed Capital Formation,Construction & Works,2375.5
+1976,Gross Fixed Capital Formation,Transport Equipment,972.2
+1976,Gross Fixed Capital Formation,Machinery & Equipment,1877.3
+1976,Gross Fixed Capital Formation,Intellectual Property Products,21.9
+1976,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),1394.2
+1976,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),22.1
+1976,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),280
+1976,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),4
+1976,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),981.3
+1976,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),950.1
+1976,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1597.3
+1976,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),17.9
+1977,Gross Fixed Capital Formation,Construction & Works,2405.9
+1977,Gross Fixed Capital Formation,Transport Equipment,1199.8
+1977,Gross Fixed Capital Formation,Machinery & Equipment,1782.3
+1977,Gross Fixed Capital Formation,Intellectual Property Products,33.7
+1977,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),1495.6
+1977,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),16.9
+1977,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),344.8
+1977,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),6.6
+1977,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),910.3
+1977,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1182.9
+1977,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1437.5
+1977,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),27.2
+1978,Gross Fixed Capital Formation,Construction & Works,2495.9
+1978,Gross Fixed Capital Formation,Transport Equipment,1461.1
+1978,Gross Fixed Capital Formation,Machinery & Equipment,2343.3
+1978,Gross Fixed Capital Formation,Intellectual Property Products,50
+1978,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),1454.3
+1978,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),12.4
+1978,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),517.7
+1978,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),10
+1978,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),1041.6
+1978,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1448.7
+1978,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),1825.6
+1978,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),40
+1979,Gross Fixed Capital Formation,Construction & Works,2943.2
+1979,Gross Fixed Capital Formation,Transport Equipment,1900
+1979,Gross Fixed Capital Formation,Machinery & Equipment,2619.9
+1979,Gross Fixed Capital Formation,Intellectual Property Products,60.6
+1979,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),1534.3
+1979,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),14.9
+1979,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),252.7
+1979,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),11.6
+1979,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),1408.9
+1979,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1885.1
+1979,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),2367.2
+1979,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),48.9
+1980,Gross Fixed Capital Formation,Construction & Works,4309.5
+1980,Gross Fixed Capital Formation,Transport Equipment,2245.7
+1980,Gross Fixed Capital Formation,Machinery & Equipment,3592.4
+1980,Gross Fixed Capital Formation,Intellectual Property Products,76.5
+1980,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),2137.5
+1980,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),26.1
+1980,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),329.3
+1980,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),14
+1980,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),2172
+1980,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),2219.6
+1980,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),3263.1
+1980,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),62.5
+1981,Gross Fixed Capital Formation,Construction & Works,6107.1
+1981,Gross Fixed Capital Formation,Transport Equipment,2123
+1981,Gross Fixed Capital Formation,Machinery & Equipment,4468.5
+1981,Gross Fixed Capital Formation,Intellectual Property Products,91.7
+1981,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),2691
+1981,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),55.2
+1981,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),362.5
+1981,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),15.6
+1981,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),3416.1
+1981,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),2067.8
+1981,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),4106
+1981,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),76.1
+1982,Gross Fixed Capital Formation,Construction & Works,8280.1
+1982,Gross Fixed Capital Formation,Transport Equipment,2521.7
+1982,Gross Fixed Capital Formation,Machinery & Equipment,4627.7
+1982,Gross Fixed Capital Formation,Intellectual Property Products,140.6
+1982,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),3714
+1982,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),19.9
+1982,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),725.3
+1982,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),24.1
+1982,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),4566.1
+1982,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),2501.8
+1982,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),3902.4
+1982,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),116.5
+1983,Gross Fixed Capital Formation,Construction & Works,10876.6
+1983,Gross Fixed Capital Formation,Transport Equipment,2383.8
+1983,Gross Fixed Capital Formation,Machinery & Equipment,4150.3
+1983,Gross Fixed Capital Formation,Intellectual Property Products,135.9
+1983,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),5196.9
+1983,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),20.7
+1983,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),568.2
+1983,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),21.5
+1983,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),5679.7
+1983,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),2363.1
+1983,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),3582.1
+1983,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),114.4
+1984,Gross Fixed Capital Formation,Construction & Works,11954.6
+1984,Gross Fixed Capital Formation,Transport Equipment,2326.6
+1984,Gross Fixed Capital Formation,Machinery & Equipment,4788.5
+1984,Gross Fixed Capital Formation,Intellectual Property Products,218.3
+1984,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),5711
+1984,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),33.1
+1984,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),581.7
+1984,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),35.2
+1984,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),6243.6
+1984,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),2293.5
+1984,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),4206.8
+1984,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),183.1
+1985,Gross Fixed Capital Formation,Construction & Works,9988.1
+1985,Gross Fixed Capital Formation,Transport Equipment,1845.9
+1985,Gross Fixed Capital Formation,Machinery & Equipment,4506.7
+1985,Gross Fixed Capital Formation,Intellectual Property Products,327.2
+1985,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),5069.6
+1985,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),24.2
+1985,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),845.7
+1985,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),60.2
+1985,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),4918.5
+1985,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1821.7
+1985,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),3661
+1985,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),266.9
+1986,Gross Fixed Capital Formation,Construction & Works,7885
+1986,Gross Fixed Capital Formation,Transport Equipment,1640.7
+1986,Gross Fixed Capital Formation,Machinery & Equipment,4546.6
+1986,Gross Fixed Capital Formation,Intellectual Property Products,292.7
+1986,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),5185.7
+1986,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),42.2
+1986,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),830.8
+1986,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),53.2
+1986,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),2699.3
+1986,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1598.5
+1986,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),3715.8
+1986,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),239.4
+1987,Gross Fixed Capital Formation,Construction & Works,6972
+1987,Gross Fixed Capital Formation,Transport Equipment,1950.6
+1987,Gross Fixed Capital Formation,Machinery & Equipment,5424.2
+1987,Gross Fixed Capital Formation,Intellectual Property Products,394.3
+1987,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),4447.4
+1987,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),237.9
+1987,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),632.3
+1987,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),71.7
+1987,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),2524.6
+1987,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1712.7
+1987,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),4791.9
+1987,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),322.5
+1988,Gross Fixed Capital Formation,Construction & Works,6396.5
+1988,Gross Fixed Capital Formation,Transport Equipment,2047.3
+1988,Gross Fixed Capital Formation,Machinery & Equipment,7141.7
+1988,Gross Fixed Capital Formation,Intellectual Property Products,602.1
+1988,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),3003
+1988,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),242.4
+1988,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),592.3
+1988,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),107.8
+1988,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),3393.5
+1988,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),1804.9
+1988,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),6549.4
+1988,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),494.3
+1989,Gross Fixed Capital Formation,Construction & Works,7263.3
+1989,Gross Fixed Capital Formation,Transport Equipment,3054.5
+1989,Gross Fixed Capital Formation,Machinery & Equipment,8459.7
+1989,Gross Fixed Capital Formation,Intellectual Property Products,645.5
+1989,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),2885.6
+1989,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),147
+1989,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),636.1
+1989,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),106.2
+1989,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),4377.7
+1989,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),2907.5
+1989,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),7823.6
+1989,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),539.3
+1990,Gross Fixed Capital Formation,Construction & Works,8385.7
+1990,Gross Fixed Capital Formation,Transport Equipment,3455.7
+1990,Gross Fixed Capital Formation,Machinery & Equipment,9548.2
+1990,Gross Fixed Capital Formation,Intellectual Property Products,972.1
+1990,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),3107.4
+1990,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),31.5
+1990,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1110.2
+1990,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),168.9
+1990,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),5278.3
+1990,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),3424.2
+1990,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),8438
+1990,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),803.1
+1991,Gross Fixed Capital Formation,Construction & Works,10830.1
+1991,Gross Fixed Capital Formation,Transport Equipment,4227.6
+1991,Gross Fixed Capital Formation,Machinery & Equipment,9800.3
+1991,Gross Fixed Capital Formation,Intellectual Property Products,1174.8
+1991,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),3933.2
+1991,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),25.7
+1991,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1575.4
+1991,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),214.6
+1991,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),6896.9
+1991,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4201.9
+1991,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),8224.9
+1991,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),960.2
+1992,Gross Fixed Capital Formation,Construction & Works,13830.6
+1992,Gross Fixed Capital Formation,Transport Equipment,4779
+1992,Gross Fixed Capital Formation,Machinery & Equipment,9936
+1992,Gross Fixed Capital Formation,Intellectual Property Products,1345
+1992,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),4713.5
+1992,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),28.4
+1992,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1031
+1992,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),258.8
+1992,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),9117.1
+1992,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4750.6
+1992,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),8905
+1992,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),1086.1
+1993,Gross Fixed Capital Formation,Construction & Works,15273.1
+1993,Gross Fixed Capital Formation,Transport Equipment,5699.6
+1993,Gross Fixed Capital Formation,Machinery & Equipment,11481.1
+1993,Gross Fixed Capital Formation,Intellectual Property Products,1470.8
+1993,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),5464.2
+1993,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),62.4
+1993,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),870.7
+1993,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),278.2
+1993,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),9808.9
+1993,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),5637.2
+1993,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),10610.4
+1993,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),1192.6
+1994,Gross Fixed Capital Formation,Construction & Works,18480.5
+1994,Gross Fixed Capital Formation,Transport Equipment,4729.9
+1994,Gross Fixed Capital Formation,Machinery & Equipment,12667.1
+1994,Gross Fixed Capital Formation,Intellectual Property Products,1666.5
+1994,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),6376.2
+1994,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),85.1
+1994,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1352.9
+1994,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),322.4
+1994,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),12104.3
+1994,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4644.8
+1994,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),11314.2
+1994,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),1344
+1995,Gross Fixed Capital Formation,Construction & Works,20739.1
+1995,Gross Fixed Capital Formation,Transport Equipment,5718.9
+1995,Gross Fixed Capital Formation,Machinery & Equipment,12921.1
+1995,Gross Fixed Capital Formation,Intellectual Property Products,1925.5
+1995,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),6362.9
+1995,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),253.8
+1995,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1044.7
+1995,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),367.5
+1995,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),14376.2
+1995,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),5465.1
+1995,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),11876.4
+1995,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),1558
+1996,Gross Fixed Capital Formation,Construction & Works,26645
+1996,Gross Fixed Capital Formation,Transport Equipment,7706.3
+1996,Gross Fixed Capital Formation,Machinery & Equipment,14583.1
+1996,Gross Fixed Capital Formation,Intellectual Property Products,2493.1
+1996,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),7794.3
+1996,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),64.8
+1996,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),604.6
+1996,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),477.7
+1996,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),18850.7
+1996,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),7641.5
+1996,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),13978.5
+1996,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),2015.4
+1997,Gross Fixed Capital Formation,Construction & Works,31260
+1997,Gross Fixed Capital Formation,Transport Equipment,7503.6
+1997,Gross Fixed Capital Formation,Machinery & Equipment,15357.5
+1997,Gross Fixed Capital Formation,Intellectual Property Products,3015.4
+1997,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),10048.2
+1997,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),48.1
+1997,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),561.9
+1997,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),568.4
+1997,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),21211.8
+1997,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),7455.5
+1997,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),14795.6
+1997,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),2447
+1998,Gross Fixed Capital Formation,Construction & Works,30137.4
+1998,Gross Fixed Capital Formation,Transport Equipment,6756.7
+1998,Gross Fixed Capital Formation,Machinery & Equipment,14006
+1998,Gross Fixed Capital Formation,Intellectual Property Products,3644.2
+1998,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),10699.7
+1998,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),97.7
+1998,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),715.9
+1998,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),681.4
+1998,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),19437.7
+1998,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),6659
+1998,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),13290.1
+1998,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),2962.7
+1999,Gross Fixed Capital Formation,Construction & Works,25519.9
+1999,Gross Fixed Capital Formation,Transport Equipment,6074.8
+1999,Gross Fixed Capital Formation,Machinery & Equipment,14820.1
+1999,Gross Fixed Capital Formation,Intellectual Property Products,4149.9
+1999,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),10395.2
+1999,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),48.1
+1999,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),961
+1999,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),698.8
+1999,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),15124.7
+1999,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),6026.7
+1999,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),13859.1
+1999,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),3451.1
+2000,Gross Fixed Capital Formation,Construction & Works,24604.5
+2000,Gross Fixed Capital Formation,Transport Equipment,4776.1
+2000,Gross Fixed Capital Formation,Machinery & Equipment,19368.8
+2000,Gross Fixed Capital Formation,Intellectual Property Products,4793.5
+2000,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),9104.5
+2000,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),67.7
+2000,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1024.9
+2000,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),759.3
+2000,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),15500
+2000,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4708.4
+2000,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),18343.9
+2000,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),4034.2
+2001,Gross Fixed Capital Formation,Construction & Works,23288.7
+2001,Gross Fixed Capital Formation,Transport Equipment,5109.6
+2001,Gross Fixed Capital Formation,Machinery & Equipment,15786.3
+2001,Gross Fixed Capital Formation,Intellectual Property Products,5508.2
+2001,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),9244.5
+2001,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),195.4
+2001,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),909.3
+2001,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),873.9
+2001,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),14044.2
+2001,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4914.2
+2001,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),14877
+2001,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),4634.3
+2002,Gross Fixed Capital Formation,Construction & Works,20120.9
+2002,Gross Fixed Capital Formation,Transport Equipment,4567.1
+2002,Gross Fixed Capital Formation,Machinery & Equipment,13887
+2002,Gross Fixed Capital Formation,Intellectual Property Products,5751.6
+2002,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),7599.2
+2002,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),219.1
+2002,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),899.4
+2002,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1103.2
+2002,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),12521.7
+2002,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4348
+2002,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),12987.6
+2002,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),4648.4
+2003,Gross Fixed Capital Formation,Construction & Works,18108.6
+2003,Gross Fixed Capital Formation,Transport Equipment,4192.7
+2003,Gross Fixed Capital Formation,Machinery & Equipment,13689.4
+2003,Gross Fixed Capital Formation,Intellectual Property Products,6141.2
+2003,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),7567.8
+2003,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),82
+2003,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),921.6
+2003,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1306.7
+2003,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),10540.8
+2003,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4110.7
+2003,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),12767.8
+2003,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),4834.5
+2004,Gross Fixed Capital Formation,Construction & Works,17995.5
+2004,Gross Fixed Capital Formation,Transport Equipment,4170.8
+2004,Gross Fixed Capital Formation,Machinery & Equipment,18011.9
+2004,Gross Fixed Capital Formation,Intellectual Property Products,7032.9
+2004,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),7015.3
+2004,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),40.6
+2004,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),964.8
+2004,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1213.2
+2004,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),10980.2
+2004,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),4130.2
+2004,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),17047.1
+2004,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),5819.8
+2005,Gross Fixed Capital Formation,Construction & Works,19191.6
+2005,Gross Fixed Capital Formation,Transport Equipment,5243.8
+2005,Gross Fixed Capital Formation,Machinery & Equipment,17332
+2005,Gross Fixed Capital Formation,Intellectual Property Products,7558.8
+2005,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),6758.6
+2005,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),36.4
+2005,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1094.8
+2005,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1133.2
+2005,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),12433
+2005,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),5207.5
+2005,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),16237.2
+2005,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),6425.6
+2006,Gross Fixed Capital Formation,Construction & Works,21119.5
+2006,Gross Fixed Capital Formation,Transport Equipment,5322.3
+2006,Gross Fixed Capital Formation,Machinery & Equipment,19099.3
+2006,Gross Fixed Capital Formation,Intellectual Property Products,8980.2
+2006,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),6028.9
+2006,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),92.7
+2006,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),886.8
+2006,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1000.1
+2006,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),15090.6
+2006,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),5229.5
+2006,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),18212.5
+2006,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),7980.1
+2007,Gross Fixed Capital Formation,Construction & Works,30088.9
+2007,Gross Fixed Capital Formation,Transport Equipment,7114.5
+2007,Gross Fixed Capital Formation,Machinery & Equipment,19895.5
+2007,Gross Fixed Capital Formation,Intellectual Property Products,9373
+2007,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),6243.6
+2007,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),87.2
+2007,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),857.6
+2007,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),994.4
+2007,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),23845.3
+2007,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),7027.3
+2007,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),19037.9
+2007,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),8378.6
+2008,Gross Fixed Capital Formation,Construction & Works,38583.2
+2008,Gross Fixed Capital Formation,Transport Equipment,8086.4
+2008,Gross Fixed Capital Formation,Machinery & Equipment,19649.9
+2008,Gross Fixed Capital Formation,Intellectual Property Products,10326.4
+2008,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),8771.4
+2008,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),78.2
+2008,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),983
+2008,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1075.6
+2008,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),29811.8
+2008,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),8008.2
+2008,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),18666.9
+2008,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),9250.8
+2009,Gross Fixed Capital Formation,Construction & Works,44689.4
+2009,Gross Fixed Capital Formation,Transport Equipment,7539.2
+2009,Gross Fixed Capital Formation,Machinery & Equipment,18132.3
+2009,Gross Fixed Capital Formation,Intellectual Property Products,11074.6
+2009,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),11219.6
+2009,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),173.2
+2009,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1207.9
+2009,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1343.5
+2009,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),33469.8
+2009,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),7365.9
+2009,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),16924.4
+2009,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),9731
+2010,Gross Fixed Capital Formation,Construction & Works,43546.8
+2010,Gross Fixed Capital Formation,Transport Equipment,6585.1
+2010,Gross Fixed Capital Formation,Machinery & Equipment,21740.9
+2010,Gross Fixed Capital Formation,Intellectual Property Products,11735.1
+2010,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),12013.5
+2010,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),83.8
+2010,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1178.2
+2010,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1320.1
+2010,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),31533.4
+2010,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),6501.3
+2010,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),20562.7
+2010,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),10415
+2011,Gross Fixed Capital Formation,Construction & Works,45978.8
+2011,Gross Fixed Capital Formation,Transport Equipment,7620.3
+2011,Gross Fixed Capital Formation,Machinery & Equipment,21852.8
+2011,Gross Fixed Capital Formation,Intellectual Property Products,13320.9
+2011,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),12920.8
+2011,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),63
+2011,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1167.9
+2011,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1374.4
+2011,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),33058
+2011,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),7557.2
+2011,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),20684.9
+2011,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),11946.5
+2012,Gross Fixed Capital Formation,Construction & Works,50763.7
+2012,Gross Fixed Capital Formation,Transport Equipment,9109.8
+2012,Gross Fixed Capital Formation,Machinery & Equipment,22722.2
+2012,Gross Fixed Capital Formation,Intellectual Property Products,14870.3
+2012,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),13790.5
+2012,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),88.5
+2012,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1178.9
+2012,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1441.3
+2012,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),36973.2
+2012,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),9021.3
+2012,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),21543.3
+2012,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),13429
+2013,Gross Fixed Capital Formation,Construction & Works,56061.3
+2013,Gross Fixed Capital Formation,Transport Equipment,7605.5
+2013,Gross Fixed Capital Formation,Machinery & Equipment,21780.9
+2013,Gross Fixed Capital Formation,Intellectual Property Products,20577.3
+2013,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),14228.8
+2013,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),114.4
+2013,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),969.6
+2013,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1509.4
+2013,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),41832.4
+2013,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),7491.1
+2013,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),20811.3
+2013,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),19067.8
+2014,Gross Fixed Capital Formation,Construction & Works,57151.4
+2014,Gross Fixed Capital Formation,Transport Equipment,7142
+2014,Gross Fixed Capital Formation,Machinery & Equipment,21162.7
+2014,Gross Fixed Capital Formation,Intellectual Property Products,26760.8
+2014,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),16440.7
+2014,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),299.8
+2014,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1084.3
+2014,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1630
+2014,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),40710.8
+2014,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),6842.2
+2014,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),20078.4
+2014,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),25130.8
+2015,Gross Fixed Capital Formation,Construction & Works,57702.4
+2015,Gross Fixed Capital Formation,Transport Equipment,8894.7
+2015,Gross Fixed Capital Formation,Machinery & Equipment,21555.8
+2015,Gross Fixed Capital Formation,Intellectual Property Products,27118.3
+2015,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),17692
+2015,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),454.7
+2015,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1719.3
+2015,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1850.5
+2015,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),40010.4
+2015,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),8440
+2015,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),19836.5
+2015,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),25267.8
+2016,Gross Fixed Capital Formation,Construction & Works,55328.5
+2016,Gross Fixed Capital Formation,Transport Equipment,11029.9
+2016,Gross Fixed Capital Formation,Machinery & Equipment,22328.6
+2016,Gross Fixed Capital Formation,Intellectual Property Products,26700.1
+2016,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),19180.9
+2016,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),1015.4
+2016,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1637.8
+2016,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),1938
+2016,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),36147.7
+2016,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),10014.4
+2016,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),20690.8
+2016,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),24762.1
+2017,Gross Fixed Capital Formation,Construction & Works,47613.9
+2017,Gross Fixed Capital Formation,Transport Equipment,15535.3
+2017,Gross Fixed Capital Formation,Machinery & Equipment,21885.5
+2017,Gross Fixed Capital Formation,Intellectual Property Products,37384.4
+2017,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),17569.9
+2017,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),1209.1
+2017,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1557.3
+2017,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),2089.3
+2017,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),30043.9
+2017,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),14326.2
+2017,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),20328.2
+2017,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),35295
+2018,Gross Fixed Capital Formation,Construction & Works,45983.1
+2018,Gross Fixed Capital Formation,Transport Equipment,15030.2
+2018,Gross Fixed Capital Formation,Machinery & Equipment,22972
+2018,Gross Fixed Capital Formation,Intellectual Property Products,34529.2
+2018,Gross Fixed Capital Formation (Public Sector),Construction & Works (Public Sector),16349.6
+2018,Gross Fixed Capital Formation (Public Sector),Transport Equipment (Public Sector),380.3
+2018,Gross Fixed Capital Formation (Public Sector),Machinery & Equipment (Public Sector),1965.6
+2018,Gross Fixed Capital Formation (Public Sector),Intellectual Property Products (Public Sector),2195.4
+2018,Gross Fixed Capital Formation (Private Sector),Construction & Works (Private Sector),29633.5
+2018,Gross Fixed Capital Formation (Private Sector),Transport Equipment (Private Sector),14650
+2018,Gross Fixed Capital Formation (Private Sector),Machinery & Equipment (Private Sector),21006.4
+2018,Gross Fixed Capital Formation (Private Sector),Intellectual Property Products (Private Sector),32333.8
