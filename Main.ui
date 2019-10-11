@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1046</width>
-    <height>687</height>
+    <width>1036</width>
+    <height>707</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,13 +15,6 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="placeholderText">
-       <string>Search Dataset...</string>
-      </property>
-     </widget>
-    </item>
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
@@ -32,7 +25,7 @@
         <string>Dataset View</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0" colspan="2">
+        <item row="1" column="0">
          <widget class="QTableView" name="csvTable">
           <property name="dragDropMode">
            <enum>QAbstractItemView::NoDragDrop</enum>
@@ -54,15 +47,70 @@
           </attribute>
          </widget>
         </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="search">
+            <property name="placeholderText">
+             <string>Search Dataset...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchView">
+            <property name="text">
+             <string>Search Table</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearView">
+            <property name="text">
+             <string>Clear View</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="Visualisation">
        <attribute name="title">
         <string>Visualisation</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_2">
+       <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
-         <widget class="QGraphicsView" name="graphicsView"/>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QComboBox" name="typeBox"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="xBox"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="yBox"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="plotBox"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="generate">
+            <property name="text">
+             <string>Generate Graph</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QWidget" name="graphView" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -75,7 +123,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1046</width>
+     <width>1036</width>
      <height>21</height>
     </rect>
    </property>
@@ -86,6 +134,7 @@
     <addaction name="actionImport_CSV"/>
     <addaction name="actionMerge_CSV"/>
     <addaction name="actionExport_CSV"/>
+    <addaction name="actionEmail_CSV"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -112,6 +161,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionEmail_CSV">
+   <property name="text">
+    <string>Email CSV</string>
    </property>
   </action>
  </widget>
