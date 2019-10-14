@@ -11,7 +11,6 @@ from pandas.api.types import is_numeric_dtype, is_float_dtype, is_string_dtype
 
 Qt = QtCore.Qt
 
-
 class PandasModel(QtCore.QAbstractTableModel):
     """Formats CSV into Pandas Dataframe Object"""
     def __init__(self, data, parent=None):
@@ -51,8 +50,12 @@ class MainWindow(QtGui.QMainWindow):
         uic.loadUi('Main.ui', self)
         self.setWindowTitle("Team 23 Python Data Analyser")
 
-        self.typeBox.addItem("Line Graph")
-        self.plotBox.addItem("None")
+        #add graph types
+        self.typeBox.addItem("line")
+        self.typeBox.addItem("scatter")
+        self.typeBox.addItem("bar")
+        self.typeBox.addItem("pie")
+
 
         self.actionImport_CSV.activated.connect(self.importCSV)  #imports the csv to the program
         self.actionMerge_CSV.activated.connect(self.mergeCSV)    #merges another csv with the current one
@@ -61,7 +64,6 @@ class MainWindow(QtGui.QMainWindow):
         self.clearView.pressed.connect(self.clearTableView)     #clears the current search view
 
         self.generate.clicked.connect(self.displayPlot)         #displays plotted graph according to parameters
-
         self.show()
 
     def importCSV(self):
@@ -75,11 +77,21 @@ class MainWindow(QtGui.QMainWindow):
             self.csvTable.resizeColumnsToContents()
             self.csvTable.show()
 
+            # clears comboboxes to avoid repeat values when another CSV is imported
+            self.xBox.clear()
+            self.yBox.clear()
+            self.plotBox.clear()
+
             #populate combobox values
+            colVal = 0
+            self.plotBox.addItem("None")
             for i in self.table.columns:
-                self.xBox.addItem(i)
-                self.yBox.addItem(i)
-                self.plotBox.addItem(i)
+                colName = str(colVal) + ". " + i
+                self.xBox.addItem(colName)
+                self.yBox.addItem(colName)
+                self.plotBox.addItem(colName)
+                colVal += 1
+
 
         except Exception as e:
             #Display error message
@@ -140,8 +152,6 @@ class MainWindow(QtGui.QMainWindow):
                 queryDict['float'] = 0.0
 
             #initialises the view dataframe
-
-
             for i in self.table.columns:
                 loopQ = ""
                 #sets the query datatype according to the type in the column
@@ -188,10 +198,39 @@ class MainWindow(QtGui.QMainWindow):
             xaxis = str(self.xBox.currentText())
             yaxis = str(self.yBox.currentText())
             plotType = str(self.plotBox.currentText())
+            xval = int(xaxis[0])
+            yval = int(yaxis[0])
+            plotNone = None
+
+            def defineplot(x):
+                if x == "None":
+                    return plotNone
+                else:
+                    a = int(x[0])
+                    return a
+            plotval = defineplot(plotType)
 
             #generates the plot
+            def plot(data, graphType, x, y, desiredPlots=None):
+                if desiredPlots > 0:
+                    fig, ax = plt.subplots()
+                    groupedData = data.groupby(data.columns[desiredPlots])
+                    for key, item in groupedData:
+                        groups = groupedData.get_group(key)
+                        groups.plot(kind=graphType, x=data.columns[x], y=data.columns[y], ax=ax, label=key,
+                                    figsize=(16, 6))
+                        plt.xlabel(data.columns[x])
+                        plt.ylabel(data.columns[y])
+                        plt.title("add file name here")
+                    plt.show()
+                elif desiredPlots is None:
+                    data.plot(kind=graphType, x=data.columns[x], y=data.columns[y], figsize=(16, 6))
+                    plt.xlabel(data.columns[x])
+                    plt.ylabel(data.columns[y])
+                    plt.title("add file name here")
+                    plt.show()
 
-
+            plot(self.table, graphtype, xval, yval, plotval)
 
             #puts into GUI
             """
@@ -204,6 +243,8 @@ class MainWindow(QtGui.QMainWindow):
             """
         except Exception as e:
             mod.errorGUI(str(e))
+            print e
+
 
 
 if __name__ == '__main__':
