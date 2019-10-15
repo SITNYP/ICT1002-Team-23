@@ -133,10 +133,28 @@
     </property>
     <addaction name="actionImport_CSV"/>
     <addaction name="actionMerge_CSV"/>
+    <addaction name="actionEmail"/>
+   </widget>
+   <widget class="QMenu" name="menuExport_Raw_Data">
+    <property name="title">
+     <string>Export Raw Data</string>
+    </property>
     <addaction name="actionExport_CSV"/>
-    <addaction name="actionEmail_CSV"/>
+    <addaction name="actionExport_PDF"/>
+    <addaction name="actionExport_IMG"/>
+    <addaction name="actionExport_TXT"/>
+   </widget>
+   <widget class="QMenu" name="menuExport_Search">
+    <property name="title">
+     <string>Export Search Data</string>
+    </property>
+    <addaction name="actionExport_PDF_filtered"/>
+    <addaction name="actionExport_IMG_filtered"/>
+    <addaction name="actionExport_TXT_filtered"/>
    </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuExport_Raw_Data"/>
+   <addaction name="menuExport_Search"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionExport_CSV">
@@ -163,9 +181,39 @@
     <string>Ctrl+M</string>
    </property>
   </action>
-  <action name="actionEmail_CSV">
+  <action name="actionEmail">
    <property name="text">
-    <string>Email CSV</string>
+    <string>Send to Gmail</string>
+   </property>
+  </action>
+  <action name="actionExport_PDF">
+   <property name="text">
+    <string>Export PDF</string>
+   </property>
+  </action>
+  <action name="actionExport_IMG">
+   <property name="text">
+    <string>Export IMG</string>
+   </property>
+  </action>
+  <action name="actionExport_TXT">
+   <property name="text">
+    <string>Export TXT</string>
+   </property>
+  </action>
+  <action name="actionExport_PDF_filtered">
+   <property name="text">
+    <string>Export PDF (filtered)</string>
+   </property>
+  </action>
+  <action name="actionExport_IMG_filtered">
+   <property name="text">
+    <string>Export IMG (filtered)</string>
+   </property>
+  </action>
+  <action name="actionExport_TXT_filtered">
+   <property name="text">
+    <string>Export TXT (filtered)</string>
    </property>
   </action>
  </widget>

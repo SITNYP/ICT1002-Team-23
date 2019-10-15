@@ -1,7 +1,6 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-# import numpy as np
 from PyQt4.QtGui import QFileDialog, QTableWidget, QTableWidgetItem, QSortFilterProxyModel, QMessageBox
+import matplotlib.pyplot as plt
 
 
 def fileUpload(filePath):  # takes in the file path and returns it as a pandas csv variable
@@ -35,23 +34,50 @@ def errorGUI(error):
     warning.setText(error)
     warning.exec_()
 
-# takes in 5 variables, dataset (integrate with file), x axis to plot (int - col number),
-# y axis to plot (int - col number), the groups to plot by (set to none by default,
-# if no groupby is selected, the argument is null)
+
+def successGUI():
+    """Display succesfully downloaded file messsage"""
+    success = QMessageBox()
+    success.setIcon(QMessageBox.Information)
+    success.setWindowTitle("Success!")
+    success.setText("File Downloaded")
+    success.exec_()
+
+
+#Converts all values in the column to float
+#NaN is ignored by matplotlib
+def plotcheck(data, x, y):
+    try:
+        data.iloc[:, y] = data.iloc[:, y].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
+        data.iloc[:, x] = data.iloc[:, x].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
+        if data.iloc[:, x].tail(1) is "NaN":
+            raise ValueError("Values to be plotted are strings")
+        elif data.iloc[:, y].tail(1) is "NaN":
+            raise ValueError("Values to be plotted are strings")
+        else:
+            return data
+    except Exception as e:
+        errorGUI(str(e))
+
+
 def plot(data, graphType, x, y, desiredPlots=None):
     if desiredPlots > 0:
+        # groups the specified column
         fig, ax = plt.subplots()
         groupedData = data.groupby(data.columns[desiredPlots])
         for key, item in groupedData:
             groups = groupedData.get_group(key)
-            groups.plot(kind=graphType, x=data.columns[x], y=data.columns[y], ax=ax, label=key,
-                        figsize=(16, 6))
+            # plots the graph
+            groups.plot(kind=graphType, x=data.columns[x], y=data.columns[y], ax=ax, label=key, figsize=(16, 6))
+            # sets labels
             plt.xlabel(data.columns[x])
             plt.ylabel(data.columns[y])
-        return ax
-    elif desiredPlots is None:
-        fig, ax = plt.subplots()
+        plt.show()
+    else:
+        # plots the graph
         data.plot(kind=graphType, x=data.columns[x], y=data.columns[y], figsize=(16, 6))
+        # sets labels
         plt.xlabel(data.columns[x])
         plt.ylabel(data.columns[y])
-        return ax
+        plt.show()
+
