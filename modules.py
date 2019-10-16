@@ -46,19 +46,19 @@ def successGUI():
 
 #Converts all values in the column to float
 #NaN is ignored by matplotlib
-def plotcheck(data, x, y):
+def plotcheckx(data, x):
     try:
-        data.iloc[:, y] = data.iloc[:, y].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
         data.iloc[:, x] = data.iloc[:, x].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
-        if data.iloc[:, x].tail(1) is "NaN":
-            raise ValueError("Values to be plotted are strings")
-        elif data.iloc[:, y].tail(1) is "NaN":
-            raise ValueError("Values to be plotted are strings")
-        else:
-            return data
+        return data
     except Exception as e:
         errorGUI(str(e))
 
+def plotchecky(data, y):
+    try:
+        data.iloc[:, y] = data.iloc[:, y].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
+        return data
+    except Exception as e:
+        errorGUI(str(e))
 
 def plot(data, graphType, x, y, desiredPlots=None):
     if desiredPlots > 0:

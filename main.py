@@ -56,7 +56,7 @@ class MainWindow(QtGui.QMainWindow):
         self.typeBox.addItem("line")
         self.typeBox.addItem("scatter")
         self.typeBox.addItem("bar")
-        self.typeBox.addItem("pie")
+        self.typeBox.addItem("area")
 
         #links functions to GUI
         self.actionImport_CSV.activated.connect(self.importCSV)  #imports the csv to the program
@@ -75,6 +75,8 @@ class MainWindow(QtGui.QMainWindow):
         self.actionExport_TXT.activated.connect(self.exportTXT)  # export raw table data to TXT file
         self.actionExport_TXT_filtered.activated.connect(
         self.exportTXT_filter)  # export filtered table data to TXT file
+        self.xString.clicked.connect(self.stringCheck)
+        self.yString.clicked.connect(self.stringCheck)
         self.show()
 
 #importing/merge/export
@@ -203,6 +205,19 @@ class MainWindow(QtGui.QMainWindow):
         self.csvTable.show()
 
 #graph functions
+    def stringCheck(self):
+        # converts string values to floats
+        xaxis = str(self.xBox.currentText())
+        yaxis = str(self.yBox.currentText())
+        xval = int(xaxis[0])
+        yval = int(yaxis[0])
+        if self.xString.isChecked():
+            mod.plotcheckx(self.table, xval)
+        if self.yString.isChecked():
+            mod.plotchecky(self.table, yval)
+        else:
+            return
+
     def displayPlot(self):
         """Displays Visualisation of Data using MatPlotLib"""
         try:
@@ -223,8 +238,6 @@ class MainWindow(QtGui.QMainWindow):
                     return a
             plotval = defineplot(plotType)
 
-            #checks for error in plotting
-            mod.plotcheck(self.table, xval, yval)
             #generates the plot
             mod.plot(self.table, graphtype, xval, yval, plotval)
 
