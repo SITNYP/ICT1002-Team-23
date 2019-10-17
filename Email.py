@@ -16,13 +16,11 @@ regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$' # check if its an email 
 
 def check(email):
     # pass the regualar expression
-    # and the string in search() method
+    #  search to fufill if its an email address
     if (re.search(regex, email)):
         return email
-
     else:
         return False
-
 
 def reverse_slicing(s):
     return s[::-1]
@@ -94,14 +92,15 @@ class Ui_Email(object):
         typeFile=""
         if path != "":
             for x in reversed(path):#loop to get the e.g. (/xxxxxxxxx.csv) last pathname
-
                 if x == "/":
                     break
                 total+=str(x)
+
             for i in reversed(path): #loop to get the e.g.(.csv) last file type
                 if i == ".":
                     break
                 typeFile += str(i)
+                
             total=reverse_slicing(total)
             typeFile = reverse_slicing(typeFile)
             if typeFile == "csv": # find the right file to get the right image
@@ -134,13 +133,13 @@ class Ui_Email(object):
 
     def sending_Email(self): # send email
         wrongEmail = check(self.sendAddr.text())
-        if wrongEmail == False:
-            apps = QtWidgets.QApplication([])
-
-            error_dialog = QtWidgets.QErrorMessage()
-            error_dialog.showMessage('Invalid Email')
-
+        if wrongEmail == False: #check validation for email address
+            apps = QMessageBox()
+            apps.setIcon(QMessageBox.Information)
+            apps.setWindowTitle("Error!")
+            apps.setText("Invalid Email!")
             apps.exec_()
+        #email log in send and receive
         emailfrom = "datasearchme@gmail.com"
         emailto = self.sendAddr.text()
         fileToSend = self.global_path.text()
@@ -150,11 +149,11 @@ class Ui_Email(object):
         msg = MIMEMultipart()
         msg["From"] = emailfrom
         msg["To"] = emailto
-        msg["Subject"] = "This is the updated data set file"
+        msg["Subject"] = "This is the updated data set file" # title of the email
         text=self.textEdit.toPlainText()
         body=MIMEText(text, "plain")
         msg.preamble = "Error sending an attachment file"
-        msg.attach(body)
+        msg.attach(body) # body msg
         ctype, encoding = mimetypes.guess_type(fileToSend)
         if ctype is None or encoding is not None:
             ctype = "application/octet-stream"
@@ -182,11 +181,11 @@ class Ui_Email(object):
                 attachment.set_payload(fp.read())
                 fp.close()
                 encoders.encode_base64(attachment)
-        if fileToSend != "":
+        if fileToSend != "": #if file not empty send an attachmenet file
             attachment.add_header("Content-Disposition", "attachment", filename=self.text_pic.text())
             msg.attach(attachment)
 
-
+        #activate the smtp gmail server to send
         server = smtplib.SMTP("smtp.gmail.com:587")
         server.starttls()
         server.login(username, password)
