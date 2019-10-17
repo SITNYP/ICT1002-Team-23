@@ -200,7 +200,7 @@
              </font>
             </property>
             <property name="text">
-             <string>Pick a column that needs to be grouped (Category):</string>
+             <string>Pick a column that needs to be grouped (Categories/Repeat duplicate values):</string>
             </property>
            </widget>
           </item>

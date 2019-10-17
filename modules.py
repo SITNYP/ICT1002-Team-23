@@ -1,7 +1,7 @@
-import pandas as pd
-from PyQt4.QtGui import QFileDialog, QTableWidget, QTableWidgetItem, QSortFilterProxyModel, QMessageBox
 import matplotlib.pyplot as plt
-
+import pandas as pd
+from PyQt4.QtGui import QFileDialog, QMessageBox
+import itertools
 
 def fileUpload(filePath):  # takes in the file path and returns it as a pandas csv variable
     """Uploads the user's file and returns a Pandas CSV variable"""
@@ -44,7 +44,7 @@ def successGUI():
     success.exec_()
 
 
-#Converts all values in the column to float
+#Converts all values in the column to floats (NaN is a float)
 #NaN is ignored by matplotlib
 def plotcheckx(data, x):
     try:
@@ -65,10 +65,12 @@ def plot(data, graphType, x, y, desiredPlots=None):
         # groups the specified column
         fig, ax = plt.subplots()
         groupedData = data.groupby(data.columns[desiredPlots])
+        colors = itertools.cycle(['b', 'g', 'r', 'c', 'm', 'y', 'k'])
         for key, item in groupedData:
             groups = groupedData.get_group(key)
             # plots the graph
-            groups.plot(kind=graphType, x=data.columns[x], y=data.columns[y], ax=ax, label=key, figsize=(16, 6))
+            groups.plot(kind=graphType, x=data.columns[x], y=data.columns[y], ax=ax, label=key, figsize=(16, 6),
+                        color=next(colors))
             # sets labels
             plt.xlabel(data.columns[x])
             plt.ylabel(data.columns[y])
