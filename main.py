@@ -241,6 +241,7 @@ class MainWindow(QtGui.QMainWindow):
                     return a
             plotval = defineplot(plotType)
 
+            #edit code such that it takes in the x & y values from the dataset given by user
 
             '''
             df_trainx = df[:-20]  # takes in training set for x axis
