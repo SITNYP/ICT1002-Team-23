@@ -8,6 +8,9 @@ import time
 import pdfkit as pdf
 import imgkit as img
 from pandas.api.types import is_numeric_dtype, is_float_dtype, is_string_dtype
+import numpy as np
+from sklearn import datasets, linear_model
+from sklearn.metrics import mean_squared_error, r2_score
 
 Qt = QtCore.Qt
 
@@ -238,8 +241,24 @@ class MainWindow(QtGui.QMainWindow):
                     return a
             plotval = defineplot(plotType)
 
+
+            '''
+            df_trainx = df[:-20]  # takes in training set for x axis
+            df_testx = df[-20:]  # takes in testing set for x axis
+            df_trainy = df[:-20]  # takes in training set for y axis
+            df_testy = df[-20:]  # takes in testing set for y axis
+
+            regr = linear_model.LinearRegression()  # defines variable for linear regression to take place
+            regr.fit(df_trainx, df_trainy)  # fits coordinates into variable based on training sets
+            df_predy = regr.predict(df_testx)  # predict based on test sets
+
+            #print("Mean squared error: %.2f% mean_squared_error(df_testy, df_predy))
+            #print('Variance score: %.2f' % r2_score(df_testy, df_predy))
+            '''
+
             #generates the plot
             mod.plot(self.table, graphtype, xval, yval, plotval)
+            #mod.plot(self.table, graphtype,  )          #generates regression line (AI trend prediction)
 
         except Exception as e:
             mod.errorGUI(str(e))
