@@ -239,33 +239,33 @@ class MainWindow(QtGui.QMainWindow):
                 else:
                     a = int(x[0])
                     return a
+
             plotval = defineplot(plotType)
-
-            #edit code such that it takes in the x & y values from the dataset given by user
-
-            '''
-            df_trainx = df[:-20]  # takes in training set for x axis
-            df_testx = df[-20:]  # takes in testing set for x axis
-            df_trainy = df[:-20]  # takes in training set for y axis
-            df_testy = df[-20:]  # takes in testing set for y axis
-
-            regr = linear_model.LinearRegression()  # defines variable for linear regression to take place
-            regr.fit(df_trainx, df_trainy)  # fits coordinates into variable based on training sets
-            df_predy = regr.predict(df_testx)  # predict based on test sets
-
-            #print("Mean squared error: %.2f% mean_squared_error(df_testy, df_predy))
-            #print('Variance score: %.2f' % r2_score(df_testy, df_predy))
-            '''
 
             #generates the plot
             mod.plot(self.table, graphtype, xval, yval, plotval)
-            #mod.plot(self.table, graphtype,  )          #generates regression line (AI trend prediction)
 
         except Exception as e:
             mod.errorGUI(str(e))
             print e
 
-#exporting functions
+    def displayRegression(self):
+
+        df_trainx = self.table(x)[:-20]  # takes in training set for x axis, everything exceot last 20 items
+        df_testx = self.table(x)[-20:]  # takes in testing set for x axis, last 20 items
+        df_trainy = self.table(y)[:-20]  # takes in training set for y axis, everything except last 20 items
+        df_testy = self.table(y)[-20:]  # takes in testing set for y axis, last 20 items
+
+        regr = linear_model.LinearRegression()  # defines variable for linear regression to take place
+        regr.fit(df_trainx, df_trainy)  # fits coordinates into variable based on training sets
+        df_predy = regr.predict(df_testx)  # predict based on test sets
+
+        print('Mean squared error: %.2f' % mean_squared_error(df_testy, df_predy))
+        print('Variance score: %.2f' % r2_score(df_testy, df_predy))
+
+        mod.plot(self.table, graphtype, df_testx, df_predy, plotval)  # generates regression line (AI trend prediction)
+
+    #exporting functions
     def exportPDF(self):
         """Exports the current Pandas Dataframe as a PDF File (No modifications is made)"""
         dateTimeFormat = time.strftime("%Y%m%d-%H%M%S")  # Date and Time Format (YYYYMMDD-HHMMSS)
