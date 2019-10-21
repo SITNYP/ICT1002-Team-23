@@ -103,13 +103,14 @@ class Ui_Email(object):
                 
             total=reverse_slicing(total)
             typeFile = reverse_slicing(typeFile)
+ 
             if typeFile == "csv": # find the right file to get the right image
                 pixmap = QtGui.QPixmap("img\\csvimg1.png")
                 self.pic1.setPixmap(pixmap)
                 self.text_pic.setText(total)
                 self.global_path.setText(globalpath)
                 self.pic1.show()
-            elif typeFile == "txt":
+            elif typeFile == "txt" or typeFile == "TXT":
                 pixmap = QtGui.QPixmap("img\\txtimg1.png")
                 self.pic1.setPixmap(pixmap)
                 self.text_pic.setText(total)
