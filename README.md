@@ -27,8 +27,7 @@ If you do not have these libraries, please follow the following instructions:
 1. Run installation.py
   - This will install the packages onto your system for you.
   
-
-Once you have the libraries installed, run main.py to start the program.
+2. Once you have the libraries installed, run main.py to start the program.
 
 
 ## FEATURES
@@ -47,7 +46,8 @@ Once imported, you are able to do the following:
 - Pressing on the headers will sort the table by that column in ascending and descending order.
 
 ### Visualisation
-- 
+- Able to visualise the data as line, scatter, bar, area charts using table columns.
+- Displays a graph when generated.
 
 
 ### Exporting
