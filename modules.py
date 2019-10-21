@@ -1,15 +1,7 @@
-import os
 import itertools
-
-#if user does not have the packages, it will install the packages.
-try:
-    import matplotlib.pyplot as plt
-    import pandas as pd
-    from PyQt4.QtGui import QFileDialog, QMessageBox
-except:
-    os.system('C:\Python27\Scripts\pip install pandas')
-    os.system('C:\Python27\Scripts\pip install matplotlib')
-    os.system('C:\Python27\Scripts\pip install PyQt4')
+import matplotlib.pyplot as plt
+import pandas as pd
+from PyQt4.QtGui import QFileDialog, QMessageBox
 
 def fileUpload(filePath):  # takes in the file path and returns it as a pandas csv variable
     """Uploads the user's file and returns a Pandas CSV variable"""
