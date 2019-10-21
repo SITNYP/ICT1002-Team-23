@@ -1,7 +1,14 @@
 # ICT1002-Team-23
+
 Python Assignment Submission
+
+
 Group Members:  Dylan Chew Tuan Gen   (1902158)
+
+
                 Darryl Ong            (1902616)
+                
+                
                 Lee Jia Lin           (1902802)
                 Neo Jun Yan, Brandon  (1902694)
                 Mellissa D/O Dobson   (1902662)
