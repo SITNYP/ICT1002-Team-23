@@ -14,8 +14,10 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 Qt = QtCore.Qt
 
+
 class PandasModel(QtCore.QAbstractTableModel):
     """Formats CSV into Pandas Dataframe Object"""
+
     def __init__(self, data, parent=None):
         QtCore.QAbstractTableModel.__init__(self, parent)
         self._data = data
@@ -55,41 +57,42 @@ class MainWindow(QtGui.QMainWindow):
         uic.loadUi('Main.ui', self)
         self.setWindowTitle("Team 23 Python Data Analyser")
 
-        #add graph types
+        # add graph types
         self.typeBox.addItem("line")
         self.typeBox.addItem("scatter")
         self.typeBox.addItem("bar")
         self.typeBox.addItem("area")
 
-        #links functions to GUI
-        self.actionImport_CSV.activated.connect(self.importCSV)  #imports the csv to the program
-        self.actionMerge_CSV.activated.connect(self.mergeCSV)    #merges another csv with the current one
-        self.actionExport_CSV.activated.connect(self.exportCSV)  #exports current table (after modifications) as a csv file
-        self.searchView.pressed.connect(self.searchTable)       #Searches table and displays a view
-        self.clearView.pressed.connect(self.clearTableView)     #clears the current search view
+        # links functions to GUI
+        self.actionImport_CSV.activated.connect(self.importCSV)  # imports the csv to the program
+        self.actionMerge_CSV.activated.connect(self.mergeCSV)  # merges another csv with the current one
+        self.actionExport_CSV.activated.connect(
+            self.exportCSV)  # exports current table (after modifications) as a csv file
+        self.searchView.pressed.connect(self.searchTable)  # Searches table and displays a view
+        self.clearView.pressed.connect(self.clearTableView)  # clears the current search view
         self.actionEmail.activated.connect(self.emailWindow)  # os.system('python Email.py')
-        self.generate.clicked.connect(self.displayPlot)         #displays plotted graph according to parameters
+        self.generate.clicked.connect(self.displayPlot)  # displays plotted graph according to parameters
         self.actionExport_PDF.activated.connect(self.exportPDF)  # exports raw table data file as pdf file
         self.actionExport_PDF_filtered.activated.connect(
-        self.exportPDF_filter)  # export filtered table data to pdf file
+            self.exportPDF_filter)  # export filtered table data to pdf file
         self.actionExport_IMG.activated.connect(self.exportIMG)  # export raw table data to IMG(.png) file
         self.actionExport_IMG_filtered.activated.connect(
-        self.exportIMG_filter)  # export filtered table data to IMG(.png) file
+            self.exportIMG_filter)  # export filtered table data to IMG(.png) file
         self.actionExport_TXT.activated.connect(self.exportTXT)  # export raw table data to TXT file
         self.actionExport_TXT_filtered.activated.connect(
-        self.exportTXT_filter)  # export filtered table data to TXT file
-        self.xString.clicked.connect(self.stringCheck)
-        self.yString.clicked.connect(self.stringCheck)
+            self.exportTXT_filter)  # export filtered table data to TXT file
+        self.xFloat.clicked.connect(self.floatConversion)
+        self.yFloat.clicked.connect(self.floatConversion)
         self.show()
 
-#importing/merge/export
+    # importing/merge/export
     def importCSV(self):
         """Imports CSV and displays as table in GUI"""
         try:
             fileName = mod.openFileLocation(self)
             self.table = mod.fileUpload(fileName)
             self.csvTable.setSortingEnabled(True)
-            #self.csvTable.setHorizontalHeaderLabels()
+            # self.csvTable.setHorizontalHeaderLabels()
             self.csvTable.setModel(PandasModel(self.table))
             self.csvTable.resizeColumnsToContents()
             self.csvTable.show()
@@ -99,7 +102,7 @@ class MainWindow(QtGui.QMainWindow):
             self.yBox.clear()
             self.plotBox.clear()
 
-            #populate combobox values
+            # populate combobox values
             colVal = 0
             self.plotBox.addItem("None")
             for i in self.table.columns:
@@ -111,9 +114,8 @@ class MainWindow(QtGui.QMainWindow):
 
 
         except Exception as e:
-            #Display error message
+            # Display error message
             mod.errorGUI(str(e))
-
 
     def mergeCSV(self):
         """Merges another CSV with the currently open Pandas Dataframe"""
@@ -126,7 +128,7 @@ class MainWindow(QtGui.QMainWindow):
                 newTable = newTable.reset_index(drop=True)
             else:
                 return ValueError("No matching columns found!")
-                #newTable = pd.concat([self.table, table2], axis=1)
+                # newTable = pd.concat([self.table, table2], axis=1)
 
             self.table = newTable
 
@@ -153,13 +155,13 @@ class MainWindow(QtGui.QMainWindow):
         """Searches the table and presents the search results as a view"""
         try:
             self.view = self.view.iloc[0:0]
-            #search table and generates view
+            # search table and generates view
             searchQuery = str(self.search.text())
 
             if searchQuery == "":
                 raise ValueError("Please enter a search query!")
 
-            #creates dictionary to hold the float, int and str values of the query
+            # creates dictionary to hold the float, int and str values of the query
             queryDict = {'string': searchQuery}
             try:
                 queryDict['int'] = int(searchQuery)
@@ -168,10 +170,10 @@ class MainWindow(QtGui.QMainWindow):
                 queryDict['int'] = 0
                 queryDict['float'] = 0.0
 
-            #initialises the view dataframe
+            # initialises the view dataframe
             for i in self.table.columns:
                 loopQ = ""
-                #sets the query datatype according to the type in the column
+                # sets the query datatype according to the type in the column
                 if is_numeric_dtype(self.table[i].dtype):
                     loopQ = queryDict['int']
                     queryBool = self.table[i] == loopQ
@@ -182,13 +184,13 @@ class MainWindow(QtGui.QMainWindow):
                     loopQ = queryDict['float']
                     queryBool = self.table[i] == loopQ
 
-                #if there are matches, add the rows to the view otherwise will show no result.
+                # if there are matches, add the rows to the view otherwise will show no result.
                 if self.table[queryBool].empty is False:
                     self.view = pd.concat([self.view, self.table.loc[queryBool]])
                 else:
                     continue
 
-            #displays view
+            # displays view
             if not self.view.empty:
                 self.csvTable.setSortingEnabled(True)
                 self.csvTable.setModel(PandasModel(self.view))
@@ -207,24 +209,24 @@ class MainWindow(QtGui.QMainWindow):
         self.csvTable.resizeColumnsToContents()
         self.csvTable.show()
 
-#graph functions
-    def stringCheck(self):
+    # graph functions
+    def floatConversion(self):
         # converts string values to floats
         xaxis = str(self.xBox.currentText())
         yaxis = str(self.yBox.currentText())
         xval = int(xaxis[0])
         yval = int(yaxis[0])
-        if self.xString.isChecked():
-            mod.plotcheckx(self.table, xval)
-        if self.yString.isChecked():
-            mod.plotchecky(self.table, yval)
+        if self.xFloat.isChecked():
+            mod.convertfloatX(self.table, xval)
+        if self.yFloat.isChecked():
+            mod.convertfloatY(self.table, yval)
         else:
             return
 
     def displayPlot(self):
         """Displays Visualisation of Data using MatPlotLib"""
         try:
-            #retrieve combobox values
+            # retrieve combobox values
             graphtype = str(self.typeBox.currentText())
             xaxis = str(self.xBox.currentText())
             yaxis = str(self.yBox.currentText())
@@ -233,6 +235,7 @@ class MainWindow(QtGui.QMainWindow):
             yval = int(yaxis[0])
             plotNone = None
 
+            # set the plot value to be None if no columns are selected
             def defineplot(x):
                 if x == "None":
                     return plotNone
@@ -242,7 +245,7 @@ class MainWindow(QtGui.QMainWindow):
 
             plotval = defineplot(plotType)
 
-            #generates the plot
+            # generates the plot
             mod.plot(self.table, graphtype, xval, yval, plotval)
 
         except Exception as e:
@@ -265,7 +268,7 @@ class MainWindow(QtGui.QMainWindow):
 
         mod.plot(self.table, graphtype, df_testx, df_predy, plotval)  # generates regression line (AI trend prediction)
 
-    #exporting functions
+    # exporting functions
     def exportPDF(self):
         """Exports the current Pandas Dataframe as a PDF File (No modifications is made)"""
         dateTimeFormat = time.strftime("%Y%m%d-%H%M%S")  # Date and Time Format (YYYYMMDD-HHMMSS)
@@ -348,6 +351,7 @@ class MainWindow(QtGui.QMainWindow):
 
         except Exception as e:
             mod.errorGUI(str(e))
+
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)

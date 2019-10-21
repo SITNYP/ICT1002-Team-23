@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="DataSetView">
        <attribute name="title">
@@ -136,7 +136,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="xString">
+           <widget class="QCheckBox" name="xFloat">
             <property name="font">
              <font>
               <pointsize>20</pointsize>
@@ -175,7 +175,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="yString">
+           <widget class="QCheckBox" name="yFloat">
             <property name="font">
              <font>
               <pointsize>20</pointsize>

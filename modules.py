@@ -3,6 +3,7 @@ import pandas as pd
 from PyQt4.QtGui import QFileDialog, QMessageBox
 import itertools
 
+
 def fileUpload(filePath):  # takes in the file path and returns it as a pandas csv variable
     """Uploads the user's file and returns a Pandas CSV variable"""
     if filePath.lower().endswith('.csv'):
@@ -44,21 +45,22 @@ def successGUI():
     success.exec_()
 
 
-#Converts all values in the column to floats (NaN is a float)
-#NaN is ignored by matplotlib
-def plotcheckx(data, x):
+# Converts all values in the columns to floats (NaN is a float)
+def convertfloatX(data, x):
     try:
         data.iloc[:, x] = data.iloc[:, x].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
         return data
     except Exception as e:
         errorGUI(str(e))
 
-def plotchecky(data, y):
+
+def convertfloatY(data, y):
     try:
         data.iloc[:, y] = data.iloc[:, y].map(lambda u: pd.to_numeric(u, errors=coerce, downcast="float"))
         return data
     except Exception as e:
         errorGUI(str(e))
+
 
 def plot(data, graphType, x, y, desiredPlots=None):
     if desiredPlots > 0:
@@ -68,6 +70,12 @@ def plot(data, graphType, x, y, desiredPlots=None):
         colors = itertools.cycle(['b', 'g', 'r', 'c', 'm', 'y', 'k'])
         for key, item in groupedData:
             groups = groupedData.get_group(key)
+            # checks that the number of groups do not exceed 20
+            if len(groupedData.groups.keys()) > 20:
+                raise ValueError("Too many values to be grouped, your graph could not be generated "
+                                 "or could not be generated accurately")
+            else:
+                pass
             # plots the graph
             groups.plot(kind=graphType, x=data.columns[x], y=data.columns[y], ax=ax, label=key, figsize=(16, 6),
                         color=next(colors))
@@ -82,4 +90,3 @@ def plot(data, graphType, x, y, desiredPlots=None):
         plt.xlabel(data.columns[x])
         plt.ylabel(data.columns[y])
         plt.show()
-
