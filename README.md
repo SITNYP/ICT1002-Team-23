@@ -2,22 +2,17 @@
 
 Python Assignment Submission
 
-
 Group Members:  Dylan Chew Tuan Gen   (1902158)
-
-                Darryl Ong            (1902616)
-                
+                Darryl Ong            (1902616)           
                 Lee Jia Lin           (1902802)
-                
                 Neo Jun Yan, Brandon  (1902694)
-                
                 Mellissa D/O Dobson   (1902662)
-                
-                Wong Ginn-Jie Juve    (1902206)
-                
-========================== INSTALLATION GUIDE ==========================
+                Wong Ginn-Jie Juve    (1902206)              
+
+  ========================== INSTALLATION GUIDE ==========================
 
 This program requires the following 3rd party libraries:
+
 Library       Version
 pandas        0.24.2
 PyQt4         4.11.4
@@ -34,7 +29,8 @@ If you do not have these libraries, please follow the following instructions:
 Once you have the libraries installed, run main.py to start the program.
 
 
-========================== USER GUIDE ==========================
+USER GUIDE
+
 Importing CSV
 - Allows you to import a CSV for analysis
 
@@ -50,7 +46,6 @@ Sorting
 
 Visualisation
 - 
-
 
 
 To export data, you are able to export the data (table or search query view) as the following:
