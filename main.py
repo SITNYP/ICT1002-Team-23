@@ -2,24 +2,14 @@ import os
 import sys
 import collections
 import time
-
-#imports 3rd party libraries if user has them, if not it will install it using pip
-try:
-    from PyQt4 import QtCore, QtGui, uic
-    import pandas as pd
-    import modules as mod
-    import pdfkit as pdf
-    import imgkit as img
-    from pandas.api.types import is_numeric_dtype, is_float_dtype, is_string_dtype
-    import numpy as np
-    from sklearn import datasets, linear_model
-    from sklearn.metrics import mean_squared_error, r2_score
-except:
-    os.system('C:\Python27\Scripts\pip install pandas')
-    os.system('C:\Python27\Scripts\pip install pdfkit')
-    os.system('C:\Python27\Scripts\pip install imgkit')
-    os.system('C:\Python27\Scripts\pip install sklearn')
-    os.system('C:\Python27\Scripts\pip install PyQt4')
+from PyQt4 import QtCore, QtGui, uic
+import pandas as pd
+from pandas.api.types import is_numeric_dtype, is_float_dtype, is_string_dtype
+import modules as mod
+import pdfkit as pdf
+import imgkit as img
+from sklearn import datasets, linear_model
+from sklearn.metrics import mean_squared_error, r2_score
 
 Qt = QtCore.Qt
 
