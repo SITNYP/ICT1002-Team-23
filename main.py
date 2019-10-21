@@ -3,6 +3,7 @@ import sys
 import collections
 import time
 
+#imports 3rd party libraries if user has them, if not it will install it using pip
 try:
     from PyQt4 import QtCore, QtGui, uic
     import pandas as pd
@@ -97,10 +98,16 @@ class MainWindow(QtGui.QMainWindow):
     def importCSV(self):
         """Imports CSV and displays as table in GUI"""
         try:
+            #prompts user for file location
             fileName = mod.openFileLocation(self)
+            
+            #populates dataframe with CSV data
             self.table = mod.fileUpload(fileName)
+            
+            #enables sorting for table by pressing the headers
             self.csvTable.setSortingEnabled(True)
-            # self.csvTable.setHorizontalHeaderLabels()
+            
+            #sets and shows the table in GUI
             self.csvTable.setModel(PandasModel(self.table))
             self.csvTable.resizeColumnsToContents()
             self.csvTable.show()
@@ -110,7 +117,7 @@ class MainWindow(QtGui.QMainWindow):
             self.yBox.clear()
             self.plotBox.clear()
 
-            # populate combobox values
+            # populate combobox values in visualisation
             colVal = 0
             self.plotBox.addItem("None")
             for i in self.table.columns:
@@ -128,18 +135,19 @@ class MainWindow(QtGui.QMainWindow):
     def mergeCSV(self):
         """Merges another CSV with the currently open Pandas Dataframe"""
         try:
+            #prompts user for 2nd dataset and stores it as a separate dataframe
             fileName = mod.openFileLocation(self)
             table2 = mod.fileUpload(fileName)
-
+            
+            #if same columns are present, then it will merge with the existing dataframe. otherwise will not allow merging
             if collections.Counter(self.table.columns.values) == collections.Counter(table2.columns.values):
                 newTable = pd.concat([self.table, table2])
                 newTable = newTable.reset_index(drop=True)
             else:
                 return ValueError("No matching columns found!")
-                # newTable = pd.concat([self.table, table2], axis=1)
-
+            
+            #initialises table
             self.table = newTable
-
             self.csvTable.setSortingEnabled(True)
             self.csvTable.setModel(PandasModel(self.table))
             self.csvTable.resizeColumnsToContents()
@@ -165,12 +173,15 @@ class MainWindow(QtGui.QMainWindow):
             self.view = self.view.iloc[0:0]
             # search table and generates view
             searchQuery = str(self.search.text())
-
+            
+            #throws an error if there is no search value
             if searchQuery == "":
                 raise ValueError("Please enter a search query!")
 
             # creates dictionary to hold the float, int and str values of the query
             queryDict = {'string': searchQuery}
+            
+            #if value can be an integer or float, it will convert accordingly. else it will set a default value of 0.
             try:
                 queryDict['int'] = int(searchQuery)
                 queryDict['float'] = float(searchQuery)
