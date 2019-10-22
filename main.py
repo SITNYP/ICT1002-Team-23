@@ -151,9 +151,13 @@ class MainWindow(QtGui.QMainWindow):
     def exportCSV(self):
         """Exports the current Pandas Dataframe (after merges and modifications) as a CSV File"""
         try:
-            fileName = mod.saveFileLocation(self)
-            self.table.to_csv(fileName, encoding='utf-8', index=False)
-            mod.successGUI()
+            fileName = mod.saveFileLocation(self) # if search is valid export with the latest version
+            if not self.view.empty:
+                self.view.to_csv(fileName, encoding='utf-8', index=False)
+                 mod.successGUI()
+            else:
+                self.table.to_csv(fileName, encoding='utf-8', index=False)
+                mod.successGUI()
         except Exception as e:
             # Display error message
             mod.errorGUI(str(e))
