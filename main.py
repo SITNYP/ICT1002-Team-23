@@ -153,6 +153,7 @@ class MainWindow(QtGui.QMainWindow):
         try:
             fileName = mod.saveFileLocation(self)
             self.table.to_csv(fileName, encoding='utf-8', index=False)
+            mod.successGUI()
         except Exception as e:
             # Display error message
             mod.errorGUI(str(e))
@@ -285,11 +286,16 @@ class MainWindow(QtGui.QMainWindow):
             wkhtmltopdf="wkhtmltopdf\\bin\\wkhtmltopdf.exe")  # where the config file is located at
 
         try:
-            self.table.to_html('exportPDF.html')  # convert table data to html
-            pdfFileName = 'tablePDF-' + dateTimeFormat + ".pdf"  # name file of the pdf file
-            pdf.from_file('exportPDF.html', pdfFileName, configuration=config)  # convert html to pdf file
-            os.remove('exportPDF.html')  # delete the html file
-            mod.successGUI()  # prompt file downloaded
+            if self.table.empty:
+                raise ValueError("There is no data!")
+            else:
+                self.table.to_html('exportPDF.html')  # convert table data to html
+
+                pdfFileName = 'tablePDF-' + dateTimeFormat + ".pdf"  # name file of the pdf file
+                pdf.from_file('exportPDF.html', pdfFileName, configuration=config)  # convert html to pdf file
+
+                os.remove('exportPDF.html')  # delete the html file
+                mod.successGUI()  # prompt file downloaded
 
         except Exception as e:
             mod.errorGUI(str(e))
@@ -301,12 +307,15 @@ class MainWindow(QtGui.QMainWindow):
             wkhtmltopdf="wkhtmltopdf\\bin\\wkhtmltopdf.exe")  # where the config file is located at
 
         try:
-            # self.table.to_html('exportPDF.html')  # convert table data to html
-            self.view.to_html('exportPDF_filter.html')
-            pdfFileName = 'tablePDF_filter-' + dateTimeFormat + ".pdf"  # name file of the filter pdf file
-            pdf.from_file('exportPDF_filter.html', pdfFileName, configuration=config)  # convert html to filter pdf file
-            os.remove('exportPDF_filter.html')  # delete the html file
-            mod.successGUI()  # prompt file downloaded
+            if self.view.empty:
+                raise ValueError("There is no search data!")
+            else:
+                self.view.to_html('exportPDF_filter.html')
+                pdfFileName = 'tablePDF_filter-' + dateTimeFormat + ".pdf"  # name file of the filter pdf file
+                pdf.from_file('exportPDF_filter.html', pdfFileName,
+                              configuration=config)  # convert html to filter pdf file
+                os.remove('exportPDF_filter.html')  # delete the html file
+                mod.successGUI()  # prompt file downloaded
 
         except Exception as e:
             mod.errorGUI(str(e))
@@ -317,11 +326,14 @@ class MainWindow(QtGui.QMainWindow):
         config = img.config(wkhtmltoimage="wkhtmltopdf\\bin\\wkhtmltoimage.exe")
 
         try:
-            self.table.to_html('exportIMG.html')  # export data to html
-            img.from_file("exportIMG.html", "table_image-" + dateTimeFormat + ".png",
-                          config=config)  # from html change to img(.png) file
-            os.remove('exportIMG.html')  # delete html file
-            mod.successGUI()  # prompt file downloaded
+            if self.table.empty:
+                raise ValueError("There is no data!")
+            else:
+                self.table.to_html('exportIMG.html')  # export data to html
+                img.from_file("exportIMG.html", "table_image-" + dateTimeFormat + ".png",
+                              config=config)  # from html change to img(.png) file
+                os.remove('exportIMG.html')  # delete html file
+                mod.successGUI()  # prompt file downloaded
 
         except Exception as e:
             mod.errorGUI(str(e))
@@ -332,21 +344,26 @@ class MainWindow(QtGui.QMainWindow):
         config = img.config(wkhtmltoimage="wkhtmltopdf\\bin\\wkhtmltoimage.exe")
 
         try:
-            self.view.to_html('exportIMG_filter.html')
-            img.from_file("exportIMG_filter.html", "table_image_filter-" + dateTimeFormat + ".png",
-                          config=config)  # from html change to img(.png) file
-            os.remove('exportIMG_filter.html')  # delete html file
-            mod.successGUI()  # prompt file downloaded
+            if self.view.empty:
+                raise ValueError("There is no search data!")
+            else:
+                self.view.to_html('exportIMG_filter.html')
+                img.from_file("exportIMG_filter.html", "table_image_filter-" + dateTimeFormat + ".png",
+                              config=config)  # from html change to img(.png) file
+                os.remove('exportIMG_filter.html')  # delete html file
+                mod.successGUI()  # prompt file downloaded
 
         except Exception as e:
             mod.errorGUI(str(e))
 
     def exportTXT(self):
         dateTimeFormat = time.strftime("%Y%m%d-%H%M%S")  # Date and Time Format (YYYYMMDD-HHMMSS)
-
         try:
-            self.table.to_csv('tableTXT-' + dateTimeFormat + '.TXT', sep='\t')  # export data to TXT file
-            mod.successGUI()  # prompt file downloaded
+            if self.table.empty:
+                raise ValueError("There is no data!")
+            else:
+                self.table.to_csv('tableTXT-' + dateTimeFormat + '.TXT', sep='\t')  # export data to TXT file
+                mod.successGUI()  # prompt file downloaded
 
         except Exception as e:
             mod.errorGUI(str(e))
@@ -355,8 +372,12 @@ class MainWindow(QtGui.QMainWindow):
         dateTimeFormat = time.strftime("%Y%m%d-%H%M%S")  # Date and Time Format (YYYYMMDD-HHMMSS)
 
         try:
-            self.view.to_csv('tableTXT_filter-' + dateTimeFormat + '.TXT', sep='\t')  # export filtered data to TXT file
-            mod.successGUI()  # prompt file downloaded
+            if self.view.empty:
+                raise ValueError("There is no search data!")
+            else:
+                self.view.to_csv('tableTXT_filter-' + dateTimeFormat + '.TXT',
+                                 sep='\t')  # export filtered data to TXT file
+                mod.successGUI()  # prompt file downloaded
 
         except Exception as e:
             mod.errorGUI(str(e))
