@@ -18,9 +18,9 @@ Python Assignment Submission
 This program requires the following 3rd party libraries:
 - pandas (0.24.2)
 - PyQt4 (4.11.4)
-- matplotlib (2.8.0)
-- pdfkit
-- imgkit
+- matplotlib (2.2.4)
+- pdfkit (0.6.1)
+- imgkit (1.0.2)
 - sklearn
 
 If you do not have these libraries, please follow the following instructions:
