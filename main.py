@@ -154,7 +154,7 @@ class MainWindow(QtGui.QMainWindow):
             fileName = mod.saveFileLocation(self) # if search is valid export with the latest version
             if not self.view.empty:
                 self.view.to_csv(fileName, encoding='utf-8', index=False)
-                 mod.successGUI()
+                mod.successGUI()
             else:
                 self.table.to_csv(fileName, encoding='utf-8', index=False)
                 mod.successGUI()
