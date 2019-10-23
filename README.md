@@ -27,7 +27,7 @@ If you do not have these libraries, please follow the following instructions:
 1. Run installation.py
   - This will install the packages onto your system for you.
   
-2. Once you have the libraries installed, run main.py to start the program.
+2. Once you have the libraries installed, run main.py via command line or an IDE to start the program.
 
 
 ## FEATURES
