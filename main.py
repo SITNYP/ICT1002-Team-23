@@ -8,9 +8,6 @@ from pandas.api.types import is_numeric_dtype, is_float_dtype, is_string_dtype
 import modules as mod
 import pdfkit as pdf
 import imgkit as img
-from sklearn import datasets, linear_model
-from sklearn.metrics import mean_squared_error, r2_score
-
 Qt = QtCore.Qt
 
 
@@ -71,6 +68,7 @@ class MainWindow(QtGui.QMainWindow):
         self.clearView.pressed.connect(self.clearTableView)  # clears the current search view
         self.actionEmail.activated.connect(self.emailWindow)  # os.system('python Email.py')
         self.generate.clicked.connect(self.displayPlot)  # displays plotted graph according to parameters
+        self.generate_2.clicked.connect(self.displayLr)  # displays plotted graph according to parameters
         self.actionExport_PDF.activated.connect(self.exportPDF)  # exports raw table data file as pdf file
         self.actionExport_PDF_filtered.activated.connect(
             self.exportPDF_filter)  # export filtered table data to pdf file
@@ -203,7 +201,6 @@ class MainWindow(QtGui.QMainWindow):
                     self.view = pd.concat([self.view, self.table.loc[queryBool]])
                 else:
                     continue
-
             # displays view
             if not self.view.empty:
                 self.csvTable.setSortingEnabled(True)
@@ -247,42 +244,45 @@ class MainWindow(QtGui.QMainWindow):
             plotType = str(self.plotBox.currentText())
             xval = int(xaxis[0])
             yval = int(yaxis[0])
-            plotNone = None
-
             # set the plot value to be None if no columns are selected
-            def defineplot(x):
-                if x == "None":
-                    return plotNone
-                else:
-                    a = int(x[0])
-                    return a
-
-            plotval = defineplot(plotType)
-
+            plotval = mod.defineplot(plotType)
             # generates the plot
             mod.plot(self.table, graphtype, xval, yval, plotval)
+            #machine learning
+            #Split the different graphs into section
+            sections = []
+            for n in self.table[plotType[3:]]:
+                if n in sections:
+                    continue
+                else:
+                    sections.append(n)
+                    self.plotBox_2.addItem(n)
+            #load prediction options
+            x = self.table[self.table.columns[xval]].tail(1)
+            for a in range(1,11):
+                next = int(x) + a
+                self.predictBox.addItem(str(next))
+        except Exception as e:
+            mod.errorGUI(str(e))
+            print e
+    def displayLr(self):
+        """Machine Learning - Linear Regression"""
+        try:
+            # retrieve combobox values
+            xaxis = str(self.xBox.currentText())
+            yaxis = str(self.yBox.currentText())
+            plotType = str(self.plotBox.currentText())
+            predictions = int(self.predictBox.currentText())
+            x = int(xaxis[0])
+            y = int(yaxis[0])
+            z = str(self.plotBox_2.currentText())
+            # generates the plot
+            mod.plot_lr(self.table, x, y, z, plotType, predictions)
 
         except Exception as e:
             mod.errorGUI(str(e))
             print e
 
-    def displayRegression(self):
-
-        df_trainx = self.table(x)[:-20]  # takes in training set for x axis, everything exceot last 20 items
-        df_testx = self.table(x)[-20:]  # takes in testing set for x axis, last 20 items
-        df_trainy = self.table(y)[:-20]  # takes in training set for y axis, everything except last 20 items
-        df_testy = self.table(y)[-20:]  # takes in testing set for y axis, last 20 items
-
-        regr = linear_model.LinearRegression()  # defines variable for linear regression to take place
-        regr.fit(df_trainx, df_trainy)  # fits coordinates into variable based on training sets
-        df_predy = regr.predict(df_testx)  # predict based on test sets
-
-        print('Mean squared error: %.2f' % mean_squared_error(df_testy, df_predy))
-        print('Variance score: %.2f' % r2_score(df_testy, df_predy))
-
-        mod.plot(self.table, graphtype, df_testx, df_predy, plotval)  # generates regression line (AI trend prediction)
-
-    # exporting functions
     def exportPDF(self):
         """Exports the current Pandas Dataframe as a PDF File (No modifications is made)"""
         dateTimeFormat = time.strftime("%Y%m%d-%H%M%S")  # Date and Time Format (YYYYMMDD-HHMMSS)

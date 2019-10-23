@@ -1,7 +1,12 @@
 import itertools
 import matplotlib.pyplot as plt
+from matplotlib.legend_handler import HandlerLine2D
 import pandas as pd
 from PyQt4.QtGui import QFileDialog, QMessageBox
+import sklearn
+from sklearn import linear_model
+from sklearn import metrics
+import numpy as np
 
 def fileUpload(filePath):  # takes in the file path and returns it as a pandas csv variable
     """Uploads the user's file and returns a Pandas CSV variable"""
@@ -60,6 +65,12 @@ def convertfloatY(data, y):
     except Exception as e:
         errorGUI(str(e))
 
+def defineplot(x):
+    if x == "None":
+        return None
+    else:
+        a = int(x[0])
+        return a
 
 def plot(data, graphType, x, y, desiredPlots=None):
     if desiredPlots > 0:
@@ -89,3 +100,30 @@ def plot(data, graphType, x, y, desiredPlots=None):
         plt.xlabel(data.columns[x])
         plt.ylabel(data.columns[y])
         plt.show()
+
+def plot_lr(data, x, y, z, plotType, p):
+    #filter out NaN
+    new_table = data.loc[data[plotType[3:]] == z].fillna(0)
+    #filter out 0 - as they produce inaccurate result in the machine learning
+    new_table = new_table[new_table.value != 0]
+    # generates the plot # mod.plot(new_table, graphtype, xval, yval, plotval)
+    X = new_table[new_table.columns[x]].values.reshape(-1, 1)
+    y = new_table[new_table.columns[y]].values.reshape(-1, 1)
+    #train the model
+    reg = linear_model.LinearRegression()
+    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, test_size=0.1)
+    # training algorithm
+    reg.fit(x_train, y_train)
+    # predicting x_test
+    predictions = reg.predict(x_test)
+
+    prediction_df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': predictions.flatten()})
+    # plots test set values
+    plt.scatter(x_test, y_test, label='Test', color='gray')
+    # plots best-fit line
+    plt.plot(x_test, predictions, label='Regression', color='red')
+    future = reg.predict([[p]])
+    plt.plot(p, future, 'ro', label=p, color='green')
+    plt.title(z)
+    plt.legend()
+    plt.show()
