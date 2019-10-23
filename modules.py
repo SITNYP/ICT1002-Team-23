@@ -92,6 +92,7 @@ def plot(data, graphType, x, y, desiredPlots=None):
             # sets labels
             plt.xlabel(data.columns[x])
             plt.ylabel(data.columns[y])
+            plt.title(data.columns[x] + " vs " + data.columns[y])
         plt.show()
     else:
         # plots the graph
@@ -108,15 +109,14 @@ def plot_lr(data, x, y, z, plotType, p):
     new_table = new_table[new_table.value != 0]
     # generates the plot # mod.plot(new_table, graphtype, xval, yval, plotval)
     X = new_table[new_table.columns[x]].values.reshape(-1, 1)
-    y = new_table[new_table.columns[y]].values.reshape(-1, 1)
+    Y = new_table[new_table.columns[y]].values.reshape(-1, 1)
     #train the model
     reg = linear_model.LinearRegression()
-    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, test_size=0.1)
+    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size=0.1)
     # training algorithm
     reg.fit(x_train, y_train)
     # predicting x_test
     predictions = reg.predict(x_test)
-
     prediction_df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': predictions.flatten()})
     # plots test set values
     plt.scatter(x_test, y_test, label='Test', color='gray')
@@ -125,5 +125,7 @@ def plot_lr(data, x, y, z, plotType, p):
     future = reg.predict([[p]])
     plt.plot(p, future, 'ro', label=p, color='green')
     plt.title(z)
+    plt.xlabel(new_table.columns[x])
+    plt.ylabel(new_table.columns[y])
     plt.legend()
     plt.show()

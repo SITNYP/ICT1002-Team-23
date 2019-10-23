@@ -255,7 +255,7 @@ class MainWindow(QtGui.QMainWindow):
             #Split the different graphs into section
             try:
                 for i in yaxis:
-                    if is_numeric_dtype(self.table[i].dtype):
+                    if is_numeric_dtype(i):
                         if xaxis != yaxis:
                             self.plotBox_2.clear()
                             sections = []
