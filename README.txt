@@ -24,10 +24,13 @@ This program requires the following 3rd party libraries:
 - sklearn
 
 If you do not have these libraries, please follow the following instructions:
-1. Run installation.py
+1. Ensure that pip is up to date (at least Version >=16)
+  -This is to ensure compatability with installation.py
+  
+2. Run installation.py
   - This will install the packages onto your system for you.
   
-2. Once you have the libraries installed, run main.py via command line or an IDE to start the program.
+3. Once you have the libraries installed, run main.py via command line or an IDE to start the program.
 
 
 ## FEATURES
