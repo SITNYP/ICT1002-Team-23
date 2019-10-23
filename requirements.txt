@@ -2,3 +2,4 @@ matplotlib==2.2.4
 pdfkit==0.6.1
 imgkit==1.0.2
 scikit-learn==0.20.4
+sklearn==0.0
