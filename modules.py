@@ -84,6 +84,11 @@ def plot(data, graphType, x, y, desiredPlots=None):
             if len(groupedData.groups.keys()) > 20:
                 raise ValueError("Too many values to be grouped, your graph could not be generated "
                                  "or could not be generated accurately")
+            try:
+                int(data.iloc[1,y])
+                int(data,iloc[1,x])
+            except Exception:
+                raise TypeError("Strings cannot be used to plot a graph")
             else:
                 pass
             # plots the graph
