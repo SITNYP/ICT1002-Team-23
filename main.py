@@ -242,26 +242,37 @@ class MainWindow(QtGui.QMainWindow):
             xaxis = str(self.xBox.currentText())
             yaxis = str(self.yBox.currentText())
             plotType = str(self.plotBox.currentText())
-            xval = int(xaxis[0])
-            yval = int(yaxis[0])
+            if xaxis == yaxis:
+                raise ValueError("X and Y axis are the same")
+            else:
+                xval = int(xaxis[0])
+                yval = int(yaxis[0])
             # set the plot value to be None if no columns are selected
             plotval = mod.defineplot(plotType)
             # generates the plot
             mod.plot(self.table, graphtype, xval, yval, plotval)
             #machine learning
             #Split the different graphs into section
-            sections = []
-            for n in self.table[plotType[3:]]:
-                if n in sections:
-                    continue
-                else:
-                    sections.append(n)
-                    self.plotBox_2.addItem(n)
-            #load prediction options
-            x = self.table[self.table.columns[xval]].tail(1)
-            for a in range(1,11):
-                next = int(x) + a
-                self.predictBox.addItem(str(next))
+            try:
+                for i in yaxis:
+                    if is_numeric_dtype(self.table[i].dtype):
+                        if xaxis != yaxis:
+                            self.plotBox_2.clear()
+                            sections = []
+                            for n in self.table[plotType[3:]]:
+                                if n in sections:
+                                    continue
+                                else:
+                                    sections.append(n)
+                                    self.plotBox_2.addItem(n)
+                            #load prediction options
+                            x = self.table[self.table.columns[xval]].tail(1)
+                            for a in range(1, 11):
+                                next = int(x) + a
+                                self.predictBox.addItem(str(next))
+            except Exception as e:
+                mod.errorGUI(str(e) + "\nMachine Learning will not work for this graph!")
+                print e
         except Exception as e:
             mod.errorGUI(str(e))
             print e
@@ -276,12 +287,13 @@ class MainWindow(QtGui.QMainWindow):
             x = int(xaxis[0])
             y = int(yaxis[0])
             z = str(self.plotBox_2.currentText())
+
             # generates the plot
             mod.plot_lr(self.table, x, y, z, plotType, predictions)
 
         except Exception as e:
             mod.errorGUI(str(e))
-            print e
+            print "mell"
 
     def exportPDF(self):
         """Exports the current Pandas Dataframe as a PDF File (No modifications is made)"""
